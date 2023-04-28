@@ -11,19 +11,20 @@
     <div class="container">
       <form action="">
         <div>
-          <label for="number-1">Digite o primeiro número</label>
-          <input type="number" id="number-1" />
+          <label for="number-1">Type a number</label>
+          <input type="number" id="number-1" name="number-1" required />
         </div>
         <div>
-          <label for="operador">Digite o operador</label>
-          <input type="text" id="operador" />
+          <label for="operador">Type operator (+, -, *, /)</label>
+          <input type="text" id="operador" name="operador" required />
         </div>
         <div>
-          <label for="number-2">Digite o segundo número</label>
-          <input type="number" id="number-2" />
+          <label for="number-2">Type another number</label>
+          <input type="number" id="number-2" name="number-2" required />
         </div>
-        <button type="submit" id="btn-calcular">Calcular</button>
+        <button type="submit" id="btn-calcular">Calculate</button>
       </form>
+      <button id="clear-all">Clear All</button>
 
       <div class="resultado">
         <h3>Resultado:</h3>
